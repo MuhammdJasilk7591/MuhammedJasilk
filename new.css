@@ -1,0 +1,507 @@
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+/* Reset default styles and add basic styles for mobile */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Custom Scroll Bar CSS */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6e93f7;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4070f4;
+}
+
+/* Navbar styling */
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 998;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+nav.sticky {
+  background: #4070f4;
+  padding: 13px 0;
+}
+
+nav .navbar {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+nav .navbar .logo a {
+  font-weight: 500;
+  font-size: 20px; /* Adjusted font size for mobile */
+  color: #4070f4;
+}
+
+nav.sticky .navbar .logo a {
+  color: #fff;
+}
+
+nav .navbar .menu {
+  display: none; /* Hide the menu on larger screens */
+}
+
+nav .menu-btn,
+.navbar .menu .cancel-btn {
+  position: absolute;
+  color: #fff;
+  right: 20px; /* Adjusted position for mobile */
+  top: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  display: block; /* Show the menu button on mobile */
+}
+
+/* Home section styling */
+.home {
+  height: 100vh;
+  width: 100%;
+  background: url("") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.home .home-content {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.home .text-one {
+  font-size: 18px; /* Adjusted font size for mobile */
+  color: #0E2431;
+}
+
+.home .text-two {
+  color: #0E2431;
+  font-size: 45px; /* Adjusted font size for mobile */
+  font-weight: 600;
+  margin-left: -3px;
+}
+
+.home .text-three {
+  font-size: 30px; /* Adjusted font size for mobile */
+  margin: 5px 0;
+  color: #4070f4;
+}
+
+.home .text-four {
+  font-size: 18px; /* Adjusted font size for mobile */
+  margin: 5px 0;
+  color: #0E2431;
+}
+
+.home .button {
+  margin: 14px 0;
+}
+
+.home .button button {
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 18px; /* Adjusted font size for mobile */
+  font-weight: 400;
+  background: #4070f4;
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+}
+
+/* About Section Styling */
+section {
+  padding-top: 40px;
+}
+
+section .content {
+  width: 80%;
+  margin: 40px auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about .about-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column; /* Adjusted for mobile */
+}
+
+section .title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+section .title span {
+  color: #0E2431;
+  font-size: 20px; /* Adjusted font size for mobile */
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+section .title span::before,
+section .title span::after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #4070f4;
+  left: 0;
+  bottom: 0;
+}
+
+section .title span::after {
+  bottom: -7px;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about .about-details .left {
+  width: 100%; /* Adjusted width for mobile */
+}
+
+.about .left img {
+  width: 100%; /* Adjusted image size for mobile */
+  max-width: 400px; /* Added max-width for mobile */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.about-details .right {
+  width: 100%; /* Adjusted width for mobile */
+}
+
+section .topic {
+  color: #0E2431;
+  font-size: 18px; /* Adjusted font size for mobile */
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.about-details .right p {
+  text-align: justify;
+  color: #0E2431;
+}
+
+section .button {
+  margin: 16px 0;
+}
+
+section .button button {
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 18px; /* Adjusted font size for mobile */
+  font-weight: 400;
+  background: #4070f4;
+  color: #fff;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+/* My Skills CSS */
+.skills {
+  background: #F0F8FF;
+}
+
+.skills .content {
+  padding: 40px 0;
+}
+
+.skills .skills-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column; /* Adjusted for mobile */
+}
+
+.skills-details .text {
+  width: 100%; /* Adjusted width for mobile */
+}
+
+.skills-details p {
+  color: #0E2431;
+  text-align: justify;
+}
+
+.skills .skills-details .experience {
+  display: flex;
+  align-items: center;
+  margin: 10px 0; /* Adjusted margin for mobile */
+}
+
+.skills-details .experience .num {
+  color: #0E2431;
+  font-size: 40px; /* Adjusted font size for mobile */
+}
+
+.skills-details .experience .exp {
+  color: #0E2431;
+  font-size: 14px; /* Adjusted font size for mobile */
+  font-weight: 500;
+  margin: 0 6px;
+}
+
+.skills-details .boxes {
+  width: 100%; /* Adjusted width for mobile */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Adjusted for mobile */
+  align-items: center; /* Adjusted for mobile */
+}
+
+.skills-details .box {
+  width: 100%; /* Adjusted width for mobile */
+  margin: 20px 0;
+}
+
+.skills-details .boxes .topic {
+  font-size: 18px; /* Adjusted font size for mobile */
+  color: #4070f4;
+}
+
+.skills-details .boxes .per {
+  font-size: 40px; /* Adjusted font size for mobile */
+  color: #4070f4;
+}
+
+/* My Services CSS */
+.services .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Adjusted for mobile */
+}
+
+.services .boxes .box {
+  margin: 20px 0;
+  width: 100%; /* Adjusted width for mobile */
+  text-align: center;
+  border-radius: 12px;
+  padding: 30px 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  cursor: default;
+  transition: all 0.4s ease;
+}
+
+.services .boxes .box .icon {
+  height: 50px;
+  width: 50px;
+  background: #4070f4;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  color: #fff;
+  margin: 0 auto 10px auto;
+  transition: all 0.4s ease;
+}
+
+.services .boxes .box:hover .icon {
+  background-color: #fff;
+  color: #4070f4;
+}
+
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p {
+  color: #0E2431;
+  transition: all 0.4s ease;
+}
+
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p {
+  color: #fff;
+}
+
+/* Contact Me CSS */
+.contact {
+  background: #F0F8FF;
+}
+
+.contact .content {
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.contact .text {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+/* Footer CSS */
+footer {
+  background: #4070f4;
+  padding: 15px 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+footer .text span {
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+}
+
+footer .text span a {
+  font-weight: 500;
+  color: #FFF;
+}
+
+footer .text span a:hover {
+  text-decoration: underline;
+}
+
+/* Scroll TO Top Button CSS */
+.scroll-button a {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  background: #4070f4;
+  padding: 7px 12px;
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15);
+  display: none;
+}
+
+/* Responsive Media Query */
+@media (max-width: 750px) {
+  nav .navbar {
+    width: 90%;
+  }
+
+  nav .menu-btn,
+  .navbar .menu .cancel-btn {
+    display: block;
+  }
+
+  nav .navbar .menu {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    background: #0E2431;
+    height: 100vh;
+    max-width: 400px;
+    width: 100%;
+    padding-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease;
+  }
+
+  .navbar.active .menu {
+    left: 0;
+  }
+
+  nav .navbar .menu a {
+    font-size: 23px;
+    display: block;
+    color: #fff;
+    margin: 10px 0;
+  }
+
+  nav.sticky .menu a:hover {
+    color: #4070f4;
+  }
+
+  nav .navbar .media-icons {
+    display: none;
+  }
+
+  .home .text-two {
+    font-size: 55px;
+  }
+
+  .home .text-three {
+    font-size: 33px;
+  }
+}
+
+@media (max-width: 500px) {
+  .home .text-two {
+    font-size: 45px;
+  }
+
+  .home .text-three {
+    font-size: 25px;
+  }
+
+  .skills-details .boxes .per {
+    font-size: 35px;
+    color: #4070f4;
+  }
+
+  /* Adjust styles for smaller screens */
+  .left-sec {
+    max-width: 100%;
+    margin: 20px 0;
+  }
+
+  .right-sec {
+    width: 100%;
+    height: 300px;
+    margin: 20px 0;
+  }
+
+  .btn-hire {
+    width: 80px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .form {
+    margin-top: 20px;
+  }
+
+  .bt {
+    width: 80px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  .input-box {
+    width: 100%;
+    height: 30px;
+  }
+}
